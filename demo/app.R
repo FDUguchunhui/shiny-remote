@@ -23,24 +23,25 @@ library(ggfortify)
 #                         url = "mongodb://dbUser:gqgroup2021@129.106.153.109:39000"
 # )
 
-covid_patients <- mongo(collection='patients',
-                        db='COVID',
-                        url = "mongodb://localhost/")
 
-covid_diagnoses <- mongo(collection='diagnoses',
-                         db='COVID',
-                         url = "mongodb://localhost/")
+# covid_patients <- mongo(collection='patients',
+#                         db='COVID',
+#                         url = "mongodb://localhost/")
+# 
+# covid_diagnoses <- mongo(collection='diagnoses',
+#                          db='COVID',
+#                          url = "mongodb://localhost/")
+# 
+# 
+# 
+# 
+# 
+# patients <- covid_patients$find('{}')
+# diagnoses <- covid_diagnoses$find('{}')
 
 
-
-
-
-patients <- covid_patients$find('{}')
-diagnoses <- covid_diagnoses$find('{}')
-
-
-
-
+covid_patients <- read_csv('patients.csv')
+covid_diagnoses <- read_csv('diagnoses.csv')
 
 # Define UI for application that draws a histogram
 
