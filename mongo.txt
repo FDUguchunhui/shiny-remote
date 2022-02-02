@@ -1,0 +1,1 @@
+mongoexport mongodb://dbUser:gqgroup2021@129.106.153.109:39000/optum_covid19_elii_20210916 --collection=cov_pt_records --limit=10000 --out=data/covid_pt_records.json
