@@ -18,6 +18,11 @@ library(survival)
 library(haven)
 library(ggfortify)
 
+# covid_patients <- mongo(collection='cov_pt_records',
+#                         db='optum_covid19_elii_20210916',
+#                         url = "mongodb://dbUser:gqgroup2021@129.106.153.109:39000"
+# )
+
 covid_patients <- mongo(collection='patients',
                         db='COVID',
                         url = "mongodb://localhost/")
