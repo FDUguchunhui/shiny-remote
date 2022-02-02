@@ -1,1 +1,9 @@
 mongoexport mongodb://dbUser:gqgroup2021@129.106.153.109:39000/optum_covid19_elii_20210916 --collection=cov_pt_records --limit=10000 --out=data/covid_pt_records.json
+
+
+mongoimport mongodb://localhost:27017/optum_covid_test -c=covid_pt_records --file=data/covid_pt_records.json
+
+
+sudo systemctl start mongod
+
+access mongo commond line: mongosh
